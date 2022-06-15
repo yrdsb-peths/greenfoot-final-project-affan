@@ -17,6 +17,10 @@ public class PillarUp extends Actor
     }
     public void act()
     {
-        move(-5);
+        move(-2);
+        if(isTouching(Flappy.class)){
+            removeTouching(Flappy.class);
+            MyWorld world = (MyWorld) getWorld();
+        }
     }
 }
