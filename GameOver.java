@@ -10,6 +10,7 @@ public class GameOver extends World
 {
     private Label score =  new Label(MyWorld.points, 20);
     private Label textScore = new Label("score:", 20);
+    private Play restart = new Play();
     GameEnd over = new GameEnd();
     public GameOver()
     {    
@@ -18,5 +19,12 @@ public class GameOver extends World
         addObject(over, 72, 128);
         addObject(textScore, 65,170);
         addObject(score, 97, 170);
+        addObject(restart, 72, 200);
+    }
+    public void act(){
+        if(Greenfoot.mouseClicked(restart)){
+            MyWorld world = new MyWorld();
+            Greenfoot.setWorld(world);
+        }
     }
 }
