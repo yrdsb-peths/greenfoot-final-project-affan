@@ -17,7 +17,11 @@ public class Start extends World
         setBackground("background.png");
         addObject(play, 72, 128);
         addObject(logo, 72, 90);
-        MyWorld world = new MyWorld();
-
+    }
+    public void act(){
+        if(Greenfoot.mouseClicked(play)){
+            MyWorld world = new MyWorld();
+            Greenfoot.setWorld(world);
+        }
     }
 }

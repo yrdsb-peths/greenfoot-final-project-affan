@@ -43,8 +43,10 @@ public class MyWorld extends World
         pill.mark();
     }
     public void act(){
+        addObject (floor, 72, 256);
         if(pill.millisElapsed() > 500){
             removeObject(ready);
+            addObject (floor, 72, 256);
         }
         if(pill.millisElapsed() > 1000){
             removeObject(floor);
@@ -58,7 +60,6 @@ public class MyWorld extends World
             scr++;
             score.setValue(scr);
         }
-        
     }
     public void pillarSpawn(){
         int y = (200 + Greenfoot.getRandomNumber(70));
