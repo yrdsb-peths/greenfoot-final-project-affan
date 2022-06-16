@@ -18,9 +18,10 @@ public class PillarDown extends Actor
     public void act()
     {
         move(-2);
+        MyWorld world = (MyWorld) getWorld();
         if(isTouching(Flappy.class)){
-            removeTouching(Flappy.class);
-            MyWorld world = (MyWorld) getWorld();
+            world.gameOver();
+            world.removeObject(this);
         }
     }
 }

@@ -37,7 +37,7 @@ public class Flappy extends Actor
     public void act()
     {
         if(Greenfoot.isKeyDown("space")){
-            setLocation(getX(), getY() - 7);
+            setLocation(getX(), getY() - 9);
         }
         
         setLocation(getX(), getY() + 5);
