@@ -27,6 +27,8 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(144, 256, 1, false);
+        Start world = new Start();
+        Greenfoot.setWorld(world);
         scr = 0;
         setBackground("background.png");
         floor = new Floor();
