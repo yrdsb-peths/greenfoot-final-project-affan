@@ -22,7 +22,7 @@ public class GameOver extends World
         addObject(restart, 72, 200);
     }
     public void act(){
-        if(Greenfoot.mouseClicked(restart)){
+        if(Greenfoot.mouseClicked(restart) || Greenfoot.isKeyDown("up") || Greenfoot.isKeyDown("space")){
             Greenfoot.playSound("swoosh.mp3");
             MyWorld world = new MyWorld();
             Greenfoot.setWorld(world);

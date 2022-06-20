@@ -19,7 +19,7 @@ public class Start extends World
         addObject(logo, 72, 90);
     }
     public void act(){
-        if(Greenfoot.mouseClicked(play)){
+        if(Greenfoot.mouseClicked(play) || Greenfoot.isKeyDown("up") || Greenfoot.isKeyDown("space")){
             Greenfoot.playSound("swoosh.mp3");
             Greenfoot.playSound("music.mp3");
             MyWorld world = new MyWorld();

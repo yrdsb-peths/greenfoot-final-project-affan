@@ -40,9 +40,9 @@ public class Flappy extends Actor
             setLocation(getX(), 10);
         }
         if(Greenfoot.isKeyDown("space") || Greenfoot.isKeyDown("up")){
-            setLocation(getX(), getY() - 10);
+            setLocation(getX(), getY() - 6);
         }
-        setLocation(getX(), getY() + 5);
+        setLocation(getX(), getY() + 3);
         anime();
     }
 }
