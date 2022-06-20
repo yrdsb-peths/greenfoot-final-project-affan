@@ -20,6 +20,7 @@ public class PillarUp extends Actor
         move(-2);
         MyWorld world = (MyWorld) getWorld();
         if(isTouching(Flappy.class)){
+            Greenfoot.playSound("die.mp3");
             world.gameOver();
             world.removeObject(this);
         }

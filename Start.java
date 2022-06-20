@@ -20,6 +20,8 @@ public class Start extends World
     }
     public void act(){
         if(Greenfoot.mouseClicked(play)){
+            Greenfoot.playSound("swoosh.mp3");
+            Greenfoot.playSound("music.mp3");
             MyWorld world = new MyWorld();
             Greenfoot.setWorld(world);
         }

@@ -16,6 +16,7 @@ public class Floor extends Actor
     {
         MyWorld world = (MyWorld) getWorld();
         if(isTouching(Flappy.class)){
+            Greenfoot.playSound("die.mp3");
             world.gameOver();
             world.removeObject(this);
         }

@@ -58,6 +58,7 @@ public class MyWorld extends World
             removeObject(pillarD);
             pill.mark();
             scr++;
+            Greenfoot.playSound("point.mp3");
             score.setValue(scr);
         }
     }

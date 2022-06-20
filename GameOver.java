@@ -23,6 +23,7 @@ public class GameOver extends World
     }
     public void act(){
         if(Greenfoot.mouseClicked(restart)){
+            Greenfoot.playSound("swoosh.mp3");
             MyWorld world = new MyWorld();
             Greenfoot.setWorld(world);
         }
